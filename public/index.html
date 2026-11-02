@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#244738">
+<meta name="description" content="Frutos del Bosque. Vivero frutal en la Patagonia. Árboles frutales, frutos pequeños, aromáticas y plantas para cultivar.">
+<title>Frutos del Bosque · Vivero · Patagonia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
+<style>
+:root{--forest:#244738;--forestDeep:#183629;--moss:#58735a;--sage:#e7ede2;--cream:#f9f7f1;--paper:#fffdf8;--ink:#27362c;--muted:#758076;--line:#dedfd4;--apricot:#dd976a;--gold:#dbbd79;--shadow:0 17px 55px rgba(28,54,38,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font:400 15px/1.55 'DM Sans',Arial,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.5}a{color:inherit}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid #b88357;outline-offset:3px}
+.serif,h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:500}.wrap{max-width:1250px;margin:0 auto;padding:0 32px}
+.topbar{background:var(--forestDeep);color:#f8f5e9;font-size:11px;letter-spacing:.14em;text-align:center;text-transform:uppercase;padding:10px 15px}
+.header{background:rgba(249,247,241,.97);position:relative;z-index:10;border-bottom:1px solid #e5e5d9}.headerIn{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:86px}
+.brand{display:flex;align-items:center;gap:13px;text-decoration:none}.brandLogo{width:51px;height:51px;flex:none}.brandWords{line-height:1.05}.brandWords strong{display:block;font:500 25px/.98 'Fraunces',Georgia,serif;color:var(--forest)}.brandWords small{display:block;margin-top:8px;font-size:10px;letter-spacing:.30em;font-weight:700;text-transform:uppercase;color:#7e876e}
+.headerNav{display:flex;gap:30px;align-items:center}.headerNav a{font-weight:600;font-size:13px;text-decoration:none}.headerNav a:hover{color:#9a624b}.cartNav{border:1px solid #a5b3a5;border-radius:60px;padding:11px 16px;background:none;color:var(--forest);font-weight:700;font-size:13px;white-space:nowrap}.count{border-radius:40px;background:var(--forest);color:white;display:inline-grid;place-items:center;min-width:22px;height:22px;font-size:11px;margin-left:6px}
+.hero{background:#e7e9da;overflow:hidden}.heroGrid{max-width:1460px;margin:auto;min-height:510px;display:grid;grid-template-columns:1.05fr .95fr}.heroCopy{padding:78px max(35px,calc((100vw - 1200px)/2)) 75px max(35px,calc((100vw - 1200px)/2));padding-right:35px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.kicker{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#687c65;display:flex;align-items:center;gap:12px}.kicker:before{content:'';width:25px;height:1px;background:#82947a}
+.hero h1{font-size:clamp(49px,5vw,78px);line-height:1.05;letter-spacing:-.047em;color:var(--forestDeep);margin:25px 0 20px;max-width:580px}.hero h1 em{font-style:normal;color:#a66b48}.hero p{font-size:16px;line-height:1.85;color:#5e705f;max-width:485px;margin:0 0 27px}
+.action{display:inline-flex;justify-content:center;align-items:center;gap:10px;padding:14px 24px;border:1px solid var(--forest);background:var(--forest);color:white;text-decoration:none;border-radius:3px;font-size:13px;font-weight:700;transition:background .2s}.action:hover{background:var(--forestDeep)}.action.outline{background:transparent;color:var(--forest)}.action.outline:hover{background:#eff1e8}
+.heroArt{min-height:510px;position:relative;overflow:hidden;background:#bbcfb4}.heroArt svg{display:block;width:100%;height:100%;min-height:510px;object-fit:cover}.heroCaption{position:absolute;bottom:23px;right:27px;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#314e38;background:#f6f4e8bd;border-radius:3px;padding:8px 12px}
+.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding-top:26px;padding-bottom:26px}.benefit{display:flex;align-items:center;gap:14px;border-right:1px solid var(--line);padding:9px 23px}.benefit:last-child{border:0}.benefit:first-child{padding-left:0}.benefitIcon{width:39px;height:39px;border-radius:50%;background:#e5eadd;display:grid;place-items:center;color:#557459;font-size:20px;flex:none}.benefit b{display:block;font-size:13px}.benefit small{display:block;font-size:11px;color:var(--muted);margin-top:2px}
+.collection{padding:76px 0 95px;border-top:1px solid var(--line)}.sectionHead{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:30px}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.22em;font-weight:700;color:#77917a}.sectionHead h2{font-size:clamp(35px,4vw,52px);line-height:1.1;letter-spacing:-.03em;margin:12px 0 0}.sectionHead p{max-width:360px;font-size:13px;color:var(--muted);margin:0;line-height:1.8}
+.toolbar{border-top:1px solid var(--line);padding-top:23px;display:flex;justify-content:space-between;gap:18px;align-items:center}.searchField{display:flex;align-items:center;border:1px solid #ccd5c9;background:#fff;padding:0 16px;flex:1;max-width:470px;height:48px;border-radius:4px}.searchField span{font-size:20px;color:#798a7a}.searchField input{border:none;outline:none!important;width:100%;padding:0 13px;color:var(--ink);background:transparent;font-size:13px}.searchField input:focus-visible{outline:none}.refresh{background:transparent;border:none;color:var(--forest);font-size:12px;font-weight:700;text-decoration:underline;text-underline-offset:3px;padding:12px}
+.filters{display:flex;gap:9px;padding:19px 0 30px;overflow-x:auto;scrollbar-width:thin}.filter{white-space:nowrap;border:1px solid #d6ded2;color:#617162;background:#fffdf9;padding:9px 15px;border-radius:30px;font-size:12px;font-weight:600}.filter[aria-pressed=true]{color:white;background:var(--forest);border-color:var(--forest)}
+.status{font-size:12px;color:#778776;min-height:18px;margin-bottom:15px}.status.error{color:#a03d30}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:23px}.product{border:1px solid #e9e6dc;background:#fff;overflow:hidden;border-radius:6px;box-shadow:0 7px 22px rgba(30,58,42,.04);display:flex;flex-direction:column}.productPicture{height:225px;background:#eceddf;position:relative;overflow:hidden}.productPicture img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}.product:hover .productPicture img{transform:scale(1.03)}.productLabel{position:absolute;top:15px;left:15px;background:#fefef6eb;border-radius:3px;font-size:10px;text-transform:uppercase;letter-spacing:.08em;padding:7px 10px;font-weight:700;color:#47634e}
+.productMain{padding:21px;display:flex;flex-direction:column;flex:1}.product h3{margin:0;font-size:25px;line-height:1.16}.productDesc{font-size:12px;color:#768177;line-height:1.7;min-height:58px;margin:10px 0 18px}.productBottom{border-top:1px solid var(--line);padding-top:15px;display:flex;align-items:center;justify-content:space-between;margin-top:auto;gap:15px}.productBottom b{font-size:17px}.productBottom small{font-size:11px;color:var(--muted)}.productBtns{display:flex;gap:9px;margin-top:17px}.btnSmall{flex:1;padding:12px 9px;border:1px solid #c8d3c6;background:white;color:var(--forest);border-radius:3px;font-size:12px;font-weight:700}.btnSmall.dark{background:var(--forest);color:white;border-color:var(--forest)}.btnSmall:hover{filter:brightness(.93)}
+.empty{background:#edf0e7;border:1px solid #dce5da;padding:56px 35px;display:flex;justify-content:center;text-align:center;border-radius:6px}.emptyInner{max-width:540px}.emptyMark{margin:auto auto 17px;width:70px;height:70px;border:1px solid #bdcdbf;border-radius:50%;display:grid;place-items:center;font-size:29px;color:#5b775c}.empty h3{font-size:30px;margin:0 0 12px}.empty p{color:#6b7a6d;font-size:14px;line-height:1.8;margin:0 auto 20px}
+.story{background:var(--forestDeep);color:#f3f1e7;padding:80px 0}.storyLayout{display:grid;grid-template-columns:.92fr 1.08fr;gap:10%;align-items:center}.storyGraphic{height:350px;background:linear-gradient(145deg,#6f8468,#344e3f);position:relative;border:11px solid #ffffff12;overflow:hidden}.storyGraphic svg{width:100%;height:100%;object-fit:cover}.storyText h2{font-size:clamp(36px,4vw,53px);line-height:1.13;margin:15px 0 22px;letter-spacing:-.025em}.storyText p{color:#ccd5c8;line-height:1.95;font-size:14px;max-width:580px}.storyText .eyebrow{color:#c3cba8}
+.footer{background:#112b20;color:#e9e8de;padding:40px 0}.footInner{display:flex;justify-content:space-between;gap:25px;align-items:center}.footInner b{font:500 24px 'Fraunces',Georgia,serif}.footInner small{display:block;margin-top:6px;color:#a9b9aa;font-size:12px}.footInner a{font-size:12px;color:#c6d0c0}
+.scrim{position:fixed;inset:0;background:#13271ab3;z-index:29;display:none}.scrim.show{display:block}.drawer{z-index:30;position:fixed;right:0;top:0;bottom:0;width:min(470px,100vw);transform:translateX(105%);transition:transform .25s;background:var(--paper);padding:28px;display:flex;flex-direction:column;box-shadow:-15px 0 50px #101e1426;overflow:auto}.drawer.show{transform:translateX(0)}.drawerHeading{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:18px}.drawerHeading h2{margin:0;font-size:31px}.close{border:none;background:transparent;color:var(--forest);font-size:25px;padding:4px 9px}.basketBody{flex:1}.basketRow{padding:17px 0;border-bottom:1px solid var(--line);display:flex;gap:15px;justify-content:space-between}.basketName{font-weight:700;font-size:14px}.basketPrice{font-size:12px;color:var(--muted);margin-top:5px}.basketStepper{display:flex;align-items:center;gap:10px;margin-top:10px}.basketStepper button{border:1px solid #cad4c6;background:white;border-radius:3px;width:29px;height:29px}.basketStepper output{font-weight:700;min-width:17px;text-align:center}.remove{font-size:11px;border:0;background:none;text-decoration:underline;color:#996553;margin-top:10px}.basketFooter{border-top:1px solid #ced5ca;padding:20px 0 0}.subtotal{display:flex;justify-content:space-between;align-items:center;font-size:15px;margin-bottom:18px}.subtotal strong{font-size:23px}.formLabel{display:block;font-weight:700;font-size:12px;margin:12px 0 7px}.field{width:100%;border:1px solid #ccd5ca;border-radius:3px;background:white;padding:12px;color:var(--ink);font-size:13px}.basketFooter .action{width:100%;margin-top:10px}.footNote{font-size:11px;color:#748477;line-height:1.65;margin-top:14px}.copyStatus{font-size:12px;color:#486c4a;min-height:16px}
+dialog{border:none;background:#fffdf8;border-radius:6px;padding:0;max-width:790px;width:calc(100% - 32px);color:var(--ink);box-shadow:0 25px 85px #0005}dialog::backdrop{background:#10271db0}.detailLayout{display:grid;grid-template-columns:.9fr 1.1fr}.detailImage{min-height:420px;background:#ebeee2}.detailImage img{height:100%;width:100%;object-fit:cover;display:block}.detailCopy{padding:40px 34px}.detailCopy .close{float:right;margin-top:-25px;margin-right:-25px}.detailCopy h2{font-size:34px;line-height:1.15;margin:12px 0}.detailCopy p{font-size:13px;color:var(--muted);line-height:1.85}.care{border-top:1px solid var(--line);padding-top:14px;margin:16px 0;font-size:12px}.care div{margin-bottom:8px}.care b{color:var(--forest)}.detailPrice{font-weight:700;font-size:23px;margin:17px 0}.detailCopy .action{width:100%}
+@media(max-width:1000px){.heroGrid{grid-template-columns:1fr 1fr}.heroCopy{padding:62px 35px}.hero h1{font-size:58px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:720px){.wrap{padding:0 20px}.topbar{font-size:10px}.headerIn{min-height:75px}.brandLogo{width:43px;height:43px}.brandWords strong{font-size:21px}.brandWords small{letter-spacing:.22em;font-size:9px}.headerNav>a{display:none}.headerNav{gap:0}.cartNav{padding:9px 10px}.heroGrid{grid-template-columns:1fr}.heroCopy{padding:54px 22px 48px}.hero h1{font-size:54px}.heroArt,.heroArt svg{min-height:290px;max-height:350px}.benefits{grid-template-columns:1fr;gap:0;padding-top:10px;padding-bottom:10px}.benefit{border-right:0;border-bottom:1px solid var(--line);padding:14px 0}.benefit:last-child{border-bottom:0}.collection{padding:60px 0}.sectionHead{display:block}.sectionHead p{margin-top:14px}.toolbar{gap:7px}.grid{gap:13px}.productPicture{height:188px}.story{padding:65px 0}.storyLayout{grid-template-columns:1fr;gap:36px}.storyGraphic{height:260px}.footInner{display:block}.footInner>div+div{margin-top:20px}.detailLayout{grid-template-columns:1fr}.detailImage{min-height:250px;height:260px}.detailCopy{padding:28px}}
+@media(max-width:490px){.grid{grid-template-columns:1fr}.hero h1{font-size:48px}.sectionHead h2{font-size:37px}.productPicture{height:235px}.drawer{padding:20px}.empty{padding:43px 22px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="topbar">Cultivado en la Patagonia · San Carlos de Bariloche</div>
+<header class="header">
+ <div class="wrap headerIn">
+ <a class="brand" href="#" aria-label="Frutos del Bosque, inicio">
+ <svg class="brandLogo" viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="28" fill="#244738"/><path d="M6 36L21 21 30 31 39 15 55 35" fill="none" stroke="#eee9d6" stroke-width="2.5"/><path d="M8 39Q30 33 52 39" fill="none" stroke="#9fb89f" stroke-width="2"/><path d="M28 42q-10-12-14-3q0 8 12 9q8 0 2-6zM32 41q10-12 15-4q-1 9-13 10q-7 0-2-6z" fill="#d88965"/><path d="M29 43q1-14 10-17" stroke="#e2e0ba" stroke-width="2" fill="none"/></svg>
+ <span class="brandWords"><strong>Frutos del Bosque</strong><small>Vivero · Patagonia</small></span></a>
+ <nav class="headerNav" aria-label="Navegación"><a href="#plantas">Nuestras plantas</a><a href="#nosotros">El vivero</a><button class="cartNav" id="openCart" aria-label="Abrir mi pedido">Mi pedido <span class="count" id="cartCount">0</span></button></nav>
+ </div>
+</header>
+<main>
+<section class="hero">
+<div class="heroGrid">
+ <div class="heroCopy"><div class="kicker">Vivero frutal · Bariloche</div><h1>Cultivar hoy.<br><em>Disfrutar mañana.</em></h1><p>Árboles frutales, pequeños frutos y plantas para la huerta. Acompañamos cada etapa de crecimiento en el paisaje de la Patagonia.</p><a class="action" href="#plantas">Explorar nuestras plantas <span aria-hidden="true">↗</span></a></div>
+ <div class="heroArt" role="img" aria-label="Ilustración de montañas patagónicas, árboles y frutos">
+ <svg viewBox="0 0 720 560" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+ <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#d6e0c7"/><stop offset="1" stop-color="#a3c0ab"/></linearGradient><linearGradient id="hill" x2="0" y2="1"><stop stop-color="#627c65"/><stop offset="1" stop-color="#365644"/></linearGradient><linearGradient id="fruit" x2=".8" y2="1"><stop stop-color="#f3c08b"/><stop offset="1" stop-color="#c57553"/></linearGradient></defs>
+ <path fill="url(#sky)" d="M0 0h720v560H0z"/><circle cx="563" cy="117" r="86" fill="#f7e2b2" opacity=".72"/>
+ <path d="M0 325L100 230l51 46 130-171 115 153 111-113 133 142 80-53V560H0Z" fill="#d8dfce"/>
+ <path d="M281 105l-40 53 37-20 36 27-33-60ZM507 145l-41 41 41-14 36 23-36-50Z" fill="#f5f2df"/>
+ <path d="M0 394Q132 316 258 368T520 358T720 354V560H0Z" fill="#87a58a"/>
+ <path d="M0 462Q170 364 303 415T720 406V560H0Z" fill="url(#hill)"/>
+ <path d="M0 516Q190 438 358 490T720 460V560H0Z" fill="#294c3a"/>
+ <g stroke="#1c4938" stroke-width="10" fill="none" stroke-linecap="round">
+ <path d="M568 580Q551 379 562 163M558 327Q492 263 437 251M554 284Q598 215 649 195M554 389Q638 333 692 334M557 441Q483 387 410 410"/>
+ </g>
+ <g fill="#28553c" opacity=".93"><ellipse cx="429" cy="242" rx="111" ry="57" transform="rotate(19 429 242)"/><ellipse cx="568" cy="153" rx="108" ry="74"/><ellipse cx="652" cy="226" rx="86" ry="58" transform="rotate(-18 652 226)"/><ellipse cx="671" cy="334" rx="94" ry="56"/><ellipse cx="422" cy="410" rx="85" ry="52" transform="rotate(20 422 410)"/></g>
+ <g fill="#46764b"><ellipse cx="493" cy="192" rx="73" ry="38" transform="rotate(-35 493 192)"/><ellipse cx="600" cy="118" rx="85" ry="50"/><ellipse cx="697" cy="276" rx="67" ry="49"/><ellipse cx="429" cy="376" rx="60" ry="28"/></g>
+ <g fill="url(#fruit)" stroke="#e6ab74" stroke-width="2"><circle cx="478" cy="295" r="37"/><circle cx="631" cy="376" r="43"/><circle cx="543" cy="230" r="27"/><circle cx="683" cy="189" r="29"/><circle cx="392" cy="317" r="22"/></g>
+ <g fill="#c4694c" opacity=".75"><path d="M468 280q20 17 0 33M618 361q26 20 7 40M534 220q16 12 1 24" fill="none" stroke="#c4694c" stroke-width="3"/></g>
+ <g fill="#8eac78"><ellipse cx="451" cy="268" rx="23" ry="9" transform="rotate(-32 451 268)"/><ellipse cx="615" cy="344" rx="29" ry="11" transform="rotate(-27 615 344)"/><ellipse cx="685" cy="161" rx="17" ry="7" transform="rotate(22 685 161)"/></g>
+ <path d="M0 513Q165 461 297 508T720 501" fill="none" stroke="#b4c59d" stroke-width="5" opacity=".5"/>
+ </svg><span class="heroCaption">Vivero · Patagonia</span>
+ </div>
+</div></section>
+<div class="wrap benefits"><div class="benefit"><span class="benefitIcon" aria-hidden="true">✿</span><div><b>Cultivo local</b><small>Plantas criadas en Bariloche</small></div></div><div class="benefit"><span class="benefitIcon" aria-hidden="true">♧</span><div><b>Variedad frutal</b><small>Árboles, berries y aromáticas</small></div></div><div class="benefit"><span class="benefitIcon" aria-hidden="true">⌁</span><div><b>Consulta directa</b><small>Disponibilidad confirmada por el vivero</small></div></div></div>
+<section class="collection" id="plantas"><div class="wrap">
+ <div class="sectionHead"><div><div class="eyebrow">Nuestra selección</div><h2>Plantas del vivero</h2></div><p>Descubrí los ejemplares disponibles. El catálogo se actualiza desde el inventario del vivero.</p></div>
+ <div class="toolbar"><label class="searchField"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Buscar damasco, frambuesa, kiwi berry…" aria-label="Buscar plantas"></label><button class="refresh" id="refresh">Actualizar disponibilidad</button></div>
+ <div class="filters" id="filters" role="group" aria-label="Filtrar por categoría"></div>
+ <div class="status" id="status" role="status" aria-live="polite">Consultando disponibilidad…</div>
+ <div id="catalogue" class="grid" aria-live="polite"></div>
+ <div id="empty" class="empty" hidden><div class="emptyInner"><div class="emptyMark" aria-hidden="true">✳</div><h3 id="emptyTitle">Estamos preparando la próxima selección</h3><p id="emptyText">Estamos cuidando los ejemplares para su próxima temporada. Las plantas aparecerán aquí cuando estén confirmadas para la venta.</p><a class="action outline" href="#nosotros">Conocer el vivero</a></div></div>
+</div></section>
+<section class="story" id="nosotros"><div class="wrap storyLayout">
+<div class="storyGraphic" role="img" aria-label="Ilustración de un árbol creciendo entre montañas">
+<svg viewBox="0 0 600 420" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="600" height="420" fill="#829f7d"/><circle cx="465" cy="83" r="60" fill="#d5d8b1"/><path d="M0 276L160 119l70 70 112-126 135 169 123-104v292H0Z" fill="#bfceb6"/><path d="M342 63l-37 41 37-18 34 20-34-43Z" fill="#f4eee0"/><path d="M0 319Q170 220 330 292T600 280V420H0Z" fill="#4b7057"/><path d="M0 375Q110 328 250 350T600 337V420H0Z" fill="#284e3c"/><path d="M305 431v-264m0 74-77-57m78 27 84-62" stroke="#253f30" stroke-width="16" stroke-linecap="round"/><g fill="#234934"><circle cx="229" cy="160" r="65"/><circle cx="321" cy="113" r="85"/><circle cx="395" cy="175" r="65"/><circle cx="305" cy="197" r="80"/></g><g fill="#adcf9a"><circle cx="277" cy="101" r="32"/><circle cx="389" cy="150" r="25"/></g><g fill="#db9a65"><circle cx="257" cy="192" r="22"/><circle cx="352" cy="209" r="24"/><circle cx="344" cy="105" r="20"/></g></svg>
+</div><div class="storyText"><div class="eyebrow">Frutos del Bosque · Patagonia</div><h2>Desde la semilla, con tiempo y cuidado.</h2><p>En Bariloche cultivamos árboles frutales, pequeños frutos y plantas aromáticas. Cada ejemplar tiene su propio ritmo: seguimos su desarrollo y compartimos únicamente los que están listos para encontrar un nuevo lugar donde crecer.</p><p>El catálogo muestra precios y cantidades confirmados. Podés preparar una consulta desde la web y coordinar directamente con el vivero.</p></div>
+</div></section>
+</main>
+<footer class="footer"><div class="wrap footInner"><div><b>Frutos del Bosque</b><small>Vivero · Patagonia · San Carlos de Bariloche</small></div><div><small>Las fotografías de las fichas corresponden a ejemplares del vivero.</small><small>Precios y disponibilidad sujetos a confirmación.</small></div></div></footer>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Mi pedido" aria-hidden="true">
+<div class="drawerHeading"><h2>Mi pedido</h2><button id="closeCart" class="close" aria-label="Cerrar pedido">×</button></div>
+<div id="basketBody" class="basketBody"></div>
+<div class="basketFooter"><div class="subtotal"><span>Subtotal orientativo</span><strong id="subtotal">$ 0</strong></div>
+<label class="formLabel" for="customer">Tu nombre (opcional)</label><input class="field" id="customer" autocomplete="name" placeholder="Nombre">
+<label class="formLabel" for="notes">Consulta u observaciones (opcional)</label><textarea class="field" id="notes" rows="2" placeholder="Por ejemplo: retiro, entrega o fecha estimada"></textarea>
+<button class="action" id="whatsapp">Enviar consulta por WhatsApp ↗</button>
+<button class="action outline" id="copyOrder">Copiar detalle del pedido</button><div class="copyStatus" id="copyStatus" role="status"></div>
+<p class="footNote">Enviar una consulta no reserva las plantas ni descuenta existencias. El vivero confirmará el precio y la disponibilidad finales.</p></div></aside>
+<dialog id="details" aria-label="Detalles de la planta"><div id="detailsContent"></div></dialog>
+<script src="/pedido-config.js"></script>
+<script>
+'use strict';
+const API = '/api/catalogo';
+let ITEMS=[], activeCategory='Todas', searchText='', cart=new Map(), loaded=false, loadError=false;
+const byId = id => ITEMS.find(p=>p.id===id);
+const el = id => document.getElementById(id);
+const esc = text => String(text??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+const ars = amount => new Intl.NumberFormat('es-AR',{style:'currency',currency:'ARS',maximumFractionDigits:0}).format(amount);
+const sanitizePhoto = url => typeof url==='string' && /^https:\/\//i.test(url) ? url : '';
+const groups = ['Todas','Frutales de carozo','Frutales de árbol','Frutos pequeños','Vid','Aromáticas y huerta'];
+function drawFilters(){
+  const options = groups.filter(x=>x==='Todas'||ITEMS.some(p=>p.category===x)).concat(
+    [...new Set(ITEMS.map(p=>p.category))].filter(c=>!groups.includes(c))
+  );
+  if(!options.includes(activeCategory))activeCategory='Todas';
+  el('filters').innerHTML=options.map(x=>'<button class="filter" type="button" data-cat="'+esc(x)+'" aria-pressed="'+(x===activeCategory)+'">'+esc(x)+'</button>').join('');
+}
+function drawCatalogue(){
+  drawFilters();
+  const s=searchText.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
+  const shown=ITEMS.filter(p=>(activeCategory==='Todas'||p.category===activeCategory) &&
+    (p.name+' '+p.description).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().includes(s));
+  el('catalogue').innerHTML=shown.map(p=>'<article class="product">'+
+    '<div class="productPicture"><img loading="lazy" src="'+esc(sanitizePhoto(p.image))+'" alt="'+esc(p.name)+' en el vivero"><span class="productLabel">'+esc(p.category)+'</span></div>'+
+    '<div class="productMain"><h3>'+esc(p.name)+'</h3><p class="productDesc">'+esc(p.description)+'</p>'+
+    '<div class="productBottom"><b>'+ars(p.price)+'</b><small>'+p.stock+' disponibles</small></div>'+
+    '<div class="productBtns"><button type="button" class="btnSmall" data-details="'+esc(p.id)+'">Ver detalles</button><button type="button" class="btnSmall dark" data-add="'+esc(p.id)+'">Agregar +</button></div></div></article>').join('');
+  el('empty').hidden=!loaded||loadError||shown.length>0;
+  if(loaded&&!loadError&&shown.length===0){
+    el('emptyTitle').textContent=ITEMS.length===0?'Estamos preparando la próxima selección':'No encontramos plantas con ese filtro';
+    el('emptyText').textContent=ITEMS.length===0?
+      'Estamos cuidando los ejemplares para su próxima temporada. Las plantas aparecerán aquí cuando estén confirmadas para la venta.':
+      'Probá con otra categoría o buscá por un nombre diferente.';
+  }
+  if(!loaded||loadError)el('empty').hidden=true;
+}
+async function loadCatalogue(){
+  el('refresh').disabled=true;
+  el('status').textContent='Consultando disponibilidad…';
+  el('status').classList.remove('error');
+  try{
+    const response=await fetch(API,{cache:'no-store'});
+    const json=await response.json();
+    if(!response.ok||json.ok!==true||!Array.isArray(json.items))throw new Error(json.error||'No disponible');
+    ITEMS=json.items.filter(p=>p&&p.id&&p.name&&Number(p.price)>0&&Number(p.stock)>0&&sanitizePhoto(p.image))
+      .map(p=>({...p,price:Number(p.price),stock:Math.floor(Number(p.stock))}));
+    loaded=true;loadError=false;
+    for(const [id,qty] of cart){const item=byId(id);if(!item)cart.delete(id);else cart.set(id,Math.min(qty,item.stock));}
+    const date=json.consultedAt?new Date(json.consultedAt):new Date();
+    el('status').textContent=ITEMS.length?ITEMS.length+' variedades o lotes disponibles · actualizado '+date.toLocaleTimeString('es-AR',{hour:'2-digit',minute:'2-digit'}):
+      'Sin productos habilitados para la venta por el momento.';
+    drawCatalogue();drawBasket();
+  }catch(error){
+    loadError=true;loaded=true;el('catalogue').innerHTML='';el('empty').hidden=true;
+    el('status').textContent='No se pudo consultar el inventario. '+(error.message||'Revisá la conexión con Airtable.');
+    el('status').classList.add('error');
+  }finally{el('refresh').disabled=false;}
+}
+function addToCart(id){
+  const item=byId(id);if(!item)return;
+  cart.set(id,Math.min(item.stock,(cart.get(id)||0)+1));drawBasket();openCart();
+}
+function changeQty(id,delta){
+ const item=byId(id);if(!item)return;
+ const next=(cart.get(id)||0)+delta;
+ if(next<=0)cart.delete(id);else cart.set(id,Math.min(item.stock,next));
+ drawBasket();
+}
+function drawBasket(){
+ let count=0,total=0;
+ const lines=[];
+ for(const [id,qty] of cart){
+  const p=byId(id);if(!p)continue;
+  count+=qty;total+=qty*p.price;
+  lines.push('<div class="basketRow"><div><div class="basketName">'+esc(p.name)+'</div><div class="basketPrice">'+ars(p.price)+' por unidad · '+p.stock+' disponibles</div>'+
+  '<div class="basketStepper"><button type="button" data-qty="'+esc(id)+'" data-change="-1" aria-label="Restar una unidad">−</button><output>'+qty+'</output><button type="button" data-qty="'+esc(id)+'" data-change="1" aria-label="Sumar una unidad" '+(qty>=p.stock?'disabled':'')+'>+</button></div></div>'+
+  '<button type="button" class="remove" data-remove="'+esc(id)+'">Quitar</button></div>');
+ }
+ el('cartCount').textContent=count;
+ el('basketBody').innerHTML=lines.length?lines.join(''):'<div class="emptyInner" style="padding:34px 0"><h3>Tu pedido está vacío</h3><p>Agregá las plantas que te interesan para preparar la consulta.</p></div>';
+ el('subtotal').textContent=ars(total);
+ const phone=String(window.FRUTOS_WHATSAPP||'').replace(/\D/g,'');
+ el('whatsapp').disabled=count===0||!/^\d{10,15}$/.test(phone);
+ el('whatsapp').title=phone?'':'Falta configurar el teléfono de Frutos del Bosque';
+ el('copyOrder').disabled=count===0;
+}
+function openCart(){el('scrim').classList.add('show');el('drawer').classList.add('show');el('drawer').setAttribute('aria-hidden','false');document.body.style.overflow='hidden';el('closeCart').focus()}
+function closeCart(){el('scrim').classList.remove('show');el('drawer').classList.remove('show');el('drawer').setAttribute('aria-hidden','true');document.body.style.overflow=''}
+function orderText(){
+ let total=0;
+ const lines=['Hola, quisiera consultar por estas plantas de Frutos del Bosque:', ''];
+ for(const [id,qty] of cart){const p=byId(id);if(!p)continue;const subtotal=qty*p.price;total+=subtotal;lines.push('• '+p.name+' — '+qty+' × '+ars(p.price)+' = '+ars(subtotal));}
+ lines.push('','Subtotal orientativo: '+ars(total));
+ const name=el('customer').value.trim(),note=el('notes').value.trim();
+ if(name)lines.push('Nombre: '+name);
+ if(note)lines.push('Observaciones: '+note);
+ lines.push('','Quedo a la espera de confirmación de disponibilidad y precio. ¡Gracias!');
+ return lines.join('\n');
+}
+function showDetails(id){
+ const p=byId(id);if(!p)return;
+ const care=p.care||{};
+ const info=[['Sol',care.sun],['Riego',care.water],['Frío',care.cold],['Altura adulta',care.adultHeight],['Usos',care.uses]].filter(x=>x[1]);
+ el('detailsContent').innerHTML='<div class="detailLayout"><div class="detailImage"><img src="'+esc(sanitizePhoto(p.image))+'" alt="'+esc(p.name)+'"></div>'+
+ '<div class="detailCopy"><button type="button" class="close" id="closeDetails" aria-label="Cerrar detalles">×</button><div class="eyebrow">'+esc(p.category)+'</div><h2>'+esc(p.name)+'</h2><p>'+esc(p.description)+'</p>'+
+ '<div class="care">'+info.map(([k,v])=>'<div><b>'+esc(k)+':</b> '+esc(v)+'</div>').join('')+'</div>'+
+ '<div class="detailPrice">'+ars(p.price)+'</div><p>'+p.stock+' ejemplares disponibles para consulta</p>'+
+ '<button type="button" class="action" data-add="'+esc(p.id)+'">Agregar a mi pedido +</button></div></div>';
+ el('details').showModal();
+}
+el('filters').addEventListener('click',ev=>{const button=ev.target.closest('[data-cat]');if(button){activeCategory=button.dataset.cat;drawCatalogue()}});
+el('catalogue').addEventListener('click',ev=>{const add=ev.target.closest('[data-add]'),info=ev.target.closest('[data-details]');if(add)addToCart(add.dataset.add);if(info)showDetails(info.dataset.details)});
+el('detailsContent').addEventListener('click',ev=>{if(ev.target.closest('#closeDetails'))el('details').close();const add=ev.target.closest('[data-add]');if(add){el('details').close();addToCart(add.dataset.add)}});
+el('basketBody').addEventListener('click',ev=>{const qty=ev.target.closest('[data-qty]'),rem=ev.target.closest('[data-remove]');if(qty)changeQty(qty.dataset.qty,Number(qty.dataset.change));if(rem){cart.delete(rem.dataset.remove);drawBasket()}});
+el('search').addEventListener('input',ev=>{searchText=ev.target.value;drawCatalogue()});
+el('refresh').addEventListener('click',loadCatalogue);
+el('openCart').addEventListener('click',openCart);
+el('closeCart').addEventListener('click',closeCart);
+el('scrim').addEventListener('click',closeCart);
+document.addEventListener('keydown',ev=>{if(ev.key==='Escape'&&el('drawer').classList.contains('show'))closeCart()});
+el('copyOrder').addEventListener('click',async()=>{
+ const text=orderText();
+ try{await navigator.clipboard.writeText(text);el('copyStatus').textContent='Pedido copiado. Podés pegarlo en tu mensaje.'}
+ catch{el('copyStatus').textContent='No se pudo copiar automáticamente. Probá en otro navegador.'}
+});
+el('whatsapp').addEventListener('click',()=>{
+ const phone=String(window.FRUTOS_WHATSAPP||'').replace(/\D/g,'');
+ if(!/^\d{10,15}$/.test(phone)||cart.size===0)return;
+ window.open('https://wa.me/'+phone+'?text='+encodeURIComponent(orderText()),'_blank','noopener,noreferrer');
+});
+drawBasket();drawFilters();loadCatalogue();setInterval(()=>{if(!document.hidden)loadCatalogue()},300000);
+</script>
+</body></html>
